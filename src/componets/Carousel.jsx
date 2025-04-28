@@ -1,4 +1,4 @@
-// Carousel.js
+
 import React, { useState } from 'react';
 import Card from './Card';
 
@@ -16,7 +16,7 @@ const Carousel = ({ cardData }) => {
 
   return (
     <div className="relative">
-      {/* Carousel container */}
+      
       <div
         className="carousel-container flex gap-8 overflow-x-auto p-8"
         style={{ transform: `translateX(-${scrollPosition}px)`, transition: 'transform 0.3s ease' }}

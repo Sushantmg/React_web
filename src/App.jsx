@@ -7,30 +7,31 @@ import Footer from "./componets/Footer";
 import Header from "./componets/Header";
 import Carousel from "./componets/Carousel";
 import Description from "./componets/Description";
+import { PartnersList } from "./componets/PartnerList";
 
 
 
 
 const cardData = [
   {
-    image: 'https://via.placeholder.com/400',
+    image: '	https://www.optilingo.com/wp-content/uploads/2020/06/paris-1836415_640.jpg',
     title: 'Beautiful Paris',
     description: 'Explore the city of love and lights.',
     buttonText: 'Learn More'
   },
   {
-    image: 'https://via.placeholder.com/400',
+    image: '	https://arenatours.com/wp-content/uploads/2016/11/paradise-island-resort-maldives-2-1180x596.jpg',
     title: 'Maldives Paradise',
     description: 'Relax on pristine beaches surrounded by crystal-clear waters.',
     buttonText: 'Book Now'
   },
   {
-    image: 'https://via.placeholder.com/400',
+    image: '	https://i.pinimg.com/originals/64/b5/f1/64b5f1189c83f87278599928ac2965c6.jpg',
     title: 'Swiss Alps Adventure',
     description: 'Ski or hike the beautiful snow-capped Alps.',
     buttonText: 'Discover More'
   },
-  // Add more objects as needed
+  
 ];
 
 
@@ -44,16 +45,16 @@ export default function App() {
 
   return (
     <div className="font-sans text-gray-800">
-      {/* Header and Mobile Navbar */}
+      
       <div className="flex flex-col gap-2 p-4 bg-gray-100">
         <Header />
         <Mobilenavbar />
       </div>
 
-      {/* Hero Section */}
+      
       <HeroSection />
 
-      {/* Description */}
+      
       <Description/>
 
 
@@ -62,19 +63,19 @@ export default function App() {
 
 
 
-      {/* Popular Destinations with Category Setter */}
+      
       <PopularDestinations setCategory={setCategory} />
 
-      {/* Explore Destinations with the Category Filter */}
+      
       <ExploreDestinations category={category} />
       <div className="App">
       <h1 className="text-3xl font-bold text-center mb-8">Explore Our Destinations</h1>
       <Carousel cardData={cardData} />
     </div>
 
+<PartnersList/>
 
 
-      {/* Footer */}
       <Footer />
     </div>
   );

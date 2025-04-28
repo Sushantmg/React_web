@@ -1,10 +1,10 @@
 const destinations = [
-  { name: "Paris", image: "/images/paris.jpg", type: "City" },
-  { name: "New York", image: "/images/newyork.jpg", type: "City" },
-  { name: "Maldives", image: "/images/maldives.jpg", type: "Beach" },
-  { name: "Bali", image: "/images/bali.jpg", type: "Beach" },
-  { name: "Swiss Alps", image: "/images/swissalps.jpg", type: "Mountain" },
-  { name: "Mount Everest", image: "/images/everest.jpg", type: "Mountain" },
+  { name: "Paris", image: "https://s1.1zoom.me/b8048/487/Sky_Evening_France_Eiffel_Tower_Paris_From_above_520603_1920x1080.jpg", type: "City" },
+  { name: "New York", image: "https://i.redd.it/1sspx91csie31.jpg", type: "City" },
+  { name: "Maldives", image: "https://wallpapercave.com/wp/wp4088744.jpg", type: "Beach" },
+  { name: "Bali", image: "https://wallpaper.dog/large/10910056.jpg", type: "Beach" },
+  { name: "Swiss Alps", image: "https://images5.alphacoders.com/676/thumb-1920-676278.jpg", type: "Mountain" },
+  { name: "Mount Everest", image: "		https://cdn.mos.cms.futurecdn.net/D9bzCVeZLHQnZ6bUWvAkrW.jpg", type: "Mountain" },
 ];
 
 export default function ExploreDestinations({ category }) {
