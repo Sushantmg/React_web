@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+/* Add this to your global CSS if needed */
+.carousel-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden; /* Hide the scrollbar */
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .carousel-container > * {
+    flex-shrink: 0; /* Prevent items from shrinking */
+  }
+  
+  button {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #4c8bf5; /* Slightly darker blue on hover */
+  }
+  
